@@ -29,6 +29,7 @@ public class QuizService {
 
         List<Question> questions= questionDao.findRandomQuestionsByCategory(category,numQ);
 
+        //Quiz quiz= new Quiz();
         Quiz quiz= new Quiz();
         quiz.setTitle(title);
         quiz.setQuestions(questions);
